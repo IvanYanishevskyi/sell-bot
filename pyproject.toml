@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sales-order-bot"
+version = "0.1.0"
+description = "Telegram order bot with price/stock versioning"
+requires-python = ">=3.11"
+dependencies = [
+  "aiogram==3.22.0",
+  "openai>=1.40.0",
+  "pydantic>=2.8.0",
+  "openpyxl>=3.1.0",
+  "xlrd>=2.0.1",
+  "rapidfuzz>=3.9.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
